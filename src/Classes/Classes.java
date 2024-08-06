@@ -10,9 +10,9 @@ public class Classes {
         Pessoa objetoPessoa = new Pessoa();
 
         System.out.print("Digite o peso da pessoa: ");
-        objetoPessoa.peso = leitor.nextFloat();
+        objetoPessoa.setPeso(leitor.nextFloat());
         System.out.print("Digite a altura da pessoa: ");
-        objetoPessoa.altura = leitor.nextFloat();
+        objetoPessoa.setAltura(leitor.nextFloat());
 
         System.out.println("IMC = " + objetoPessoa.calcularIMC());
     }
