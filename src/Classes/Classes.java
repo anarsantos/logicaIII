@@ -7,7 +7,7 @@ public class Classes {
         Scanner leitor = new Scanner(System.in);
 
         //no lugar de peso e altura, criar a variável pessoa (não primitiva).
-        Pessoa objetoPessoa = new Pessoa();
+        Pessoa objetoPessoa = new Pessoa(70.0f, 1.70f);
 
         System.out.print("Digite o peso da pessoa: ");
         objetoPessoa.setPeso(leitor.nextFloat());
