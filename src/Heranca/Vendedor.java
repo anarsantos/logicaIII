@@ -1,48 +1,30 @@
 package Heranca;
 
-import java.util.Date;
-
-public class Vendedor {
-    private String nome;
-    private String cpf;
-    private Date dataNascimento;
-    private float salario;
+public class Vendedor extends Funcionario {
+    private int totalItensVendidos;
+    private float comiisaoPorItem;
 
     public Vendedor() {
-
+        super();
     }
 
-    //métodos acessores
-
-    public String getNome() {
-        return nome;
+    public float calcularSalario() {
+        return super.getSalario() + (this.comiisaoPorItem * totalItensVendidos);
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public int getTotalItensVendidos() {
+        return totalItensVendidos;
     }
 
-    public String getCpf() {
-        return cpf;
+    public void setTotalItensVendidos(int totalItensVendidos) {
+        this.totalItensVendidos = totalItensVendidos;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public float getComiisaoPorItem() {
+        return comiisaoPorItem;
     }
 
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public float getSalario() {
-        return salario;
-    }
-
-    public void setSalario(float salario) {
-        this.salario = salario;
+    public void setComiisaoPorItem(float comiisaoPorItem) {
+        this.comiisaoPorItem = comiisaoPorItem;
     }
 }
